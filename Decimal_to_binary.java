@@ -1,8 +1,7 @@
 
 import java.util.Scanner;
-
 public class decimal_to_binary {
-
+    
 public int first(int n) {
     double answer=0.0;
     int bit = 0;

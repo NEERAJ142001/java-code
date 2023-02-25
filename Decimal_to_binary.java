@@ -1,6 +1,9 @@
+
+import java.util.Scanner;
+
 public class decimal_to_binary {
 
-public int power(int n) {
+public int first(int n) {
     double answer=0.0;
     int bit = 0;
     int i = 0;
@@ -12,6 +15,18 @@ public int power(int n) {
     }
     return (int) answer;
 }
+public int second(int n)
+{
+    double answer=0;int i=0;int x=0;
+    while(n !=0)
+    {
+        x=n%2;
+        answer=x*Math.pow(10,i)+answer;
+        i++;
+        n=n/2;
+    }
+    return (int)answer;
+}
 
     public static void main (String[]args){
         decimal_to_binary r = new decimal_to_binary();
@@ -20,8 +35,11 @@ public int power(int n) {
         Scanner sc = new Scanner(System.in);
         System.out.println("input a length");
         int n = sc.nextInt();
-      int x=  r.power(n);
+      int x=  r.first(n);
       System.out.println(x);
+        int q=  r.second(n);
+        System.out.println(q);
 
     }
 }
+

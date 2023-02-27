@@ -2,7 +2,7 @@ package love_babbar;
 
 import java.util.Scanner;
 
-public class binary_search {
+public class Linear_search {
     private boolean search(int arr[],int size,int element)
     {
         for(int i=0;i<size;i++)
@@ -14,7 +14,7 @@ public class binary_search {
     }
     public static void main(String args[])
     {
-        binary_search n=new binary_search();
+        Linear_search n=new Linear_search();
        Scanner sc=new Scanner(System.in);
         System.out.println("input size");
         int x=sc.nextInt();

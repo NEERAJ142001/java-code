@@ -3,10 +3,12 @@ import java.util.Scanner;
 public class decimal_to_binary {
     
 public int first(int n) {
+    //decimal to binary
     double answer=0.0;
     int bit = 0;
     int i = 0;
-    while (n != 0) {
+    while (n != 0) 
+    {
         bit = n & 1;
         answer = bit * Math.pow(10, i)+ answer;
         n = n >> 1;

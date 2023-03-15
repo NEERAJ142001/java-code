@@ -11,4 +11,16 @@ public class Solution {
     return count;
     
 }
+     private int numberofonebit(int n) {
+        int count =0;
+            while(n!=0)
+            {
+                int x=n%2;
+                if(x==1) {
+                    count++;
+                }
+                n=n/2;
+            }
+            return count;
+    }
 }

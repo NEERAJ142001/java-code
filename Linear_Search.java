@@ -9,6 +9,7 @@ public class Linear_search {
         {
             if(element==arr[i])
                 return true;
+                break;
         }
         return false;
     }

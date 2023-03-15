@@ -7,3 +7,4 @@ private  int unique_element(int arr[],int n)
         }
         return ans;
     }
+//same element return 0 like 1,1 return 0 or 5,2,2 return 5 only
